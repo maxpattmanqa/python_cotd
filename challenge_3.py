@@ -2,11 +2,8 @@
 #assume the string doesnt have  a white space 
 
 def zip(string1 , string2):
-    s1 = []
-    s2 = []
-    s1[:] = string1
-    s2[:] = string2
-    output = ""
+    s1,s2,output = [],[],""
+    s1[:], s2[:] = string1,string2
     for indx , char  in enumerate(s1):
         output+= char + s2[indx]        
     return output
